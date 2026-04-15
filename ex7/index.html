@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex7 打字機消消樂</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #container {
+            min-height: 60px;
+            font-size: 36px;
+            border: 2px solid #333;
+            padding: 20px;
+            width: 500px;
+            letter-spacing: 4px;
+            user-select: none;
+        }
+
+        .info {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ex7 打字機消消樂</h1>
+
+    <div id="container" tabindex="0"></div>
+
+    <div class="info">
+        <p>請直接按鍵盤輸入字母。</p>
+        <p>連續打錯 2 次，會額外增加 3 個亂數字母。</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
