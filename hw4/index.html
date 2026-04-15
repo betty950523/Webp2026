@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>景點觀光展覽資訊</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 30px;
+        }
+
+        .top-bar {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .top-bar input {
+            width: 220px;
+            height: 40px;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+
+        .pagination-area {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <h1 class="m-0">景點觀光展覽資訊</h1>
+        <input type="text" id="searchInput" placeholder="請輸入名稱關鍵字" onchange="searchByName()">
+    </div>
+
+    <table id="csie" class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>名稱</th>
+                <th>地點</th>
+                <th>票價</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+
+    <div class="pagination-area">
+        <button class="btn btn-secondary" onclick="prevPage()">上一頁</button>
+        <span id="pageInfo">1 / 1 頁</span>
+        <button class="btn btn-secondary" onclick="nextPage()">下一頁</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
