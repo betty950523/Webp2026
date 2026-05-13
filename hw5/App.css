@@ -1,0 +1,10 @@
+.container {
+  width: 90%;
+  margin: 40px auto;
+  font-family: Arial, "Microsoft JhengHei", sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
